@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>My Test Extension Options</title></head>
+<style type="text/css">
+body {
+  margin: 5px 20px 20px;
+}
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+#call-to-action {
+  margin-top: 1em;
+  overflow: hidden;
+}
+#status, #save {
+  float: left;
+  margin-right: 0.5em;
+}
+
+</style>
+<body>
+
+<label>
+  <input type="checkbox" id="block-seens">
+  Block <b>seen</b> notifictions on Instagram stories
+</label>
+
+<label>
+  <input type="checkbox" id="block-likes">
+  Block <b>likes</b> on Instagram posts
+</label>
+
+<div id="call-to-action">
+  <button id="save">Save</button>
+  <div id="status"></div>
+</div>
+
+<script src="options.js"></script>
+</body>
+</html>

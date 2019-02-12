@@ -1,0 +1,25 @@
+{
+	"name": "Instagram Incognito",
+	"version": "1.0",
+	"description": "Block all like and seen events in Instagram",
+	"manifest_version": 2,
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+	"background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "permissions": [
+      "storage",
+      "webRequest",
+      "webRequestBlocking",
+      "*://*.instagram.com/"
+    ]
+ }
